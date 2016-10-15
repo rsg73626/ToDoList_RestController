@@ -1,0 +1,39 @@
+package br.senai.sp.todolist.controller;
+
+import javax.validation.ConstraintViolationException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.senai.sp.todolist.dao.TarefaDAO;
+import br.senai.sp.todolist.model.Item;
+import br.senai.sp.todolist.model.Tarefa;
+
+@RestController
+public class TarefaRestController {
+	@Autowired
+	private TarefaDAO dao;
+	
+	public ResponseEntity<Object> create(@RequestBody Tarefa tarefa){
+		try{
+			for(Item i:tarefa.getItens()){
+				i.setTarefa(tarefa);
+			}
+			dao.create(tarefa);
+			
+		}catch(ConstraintViolationException cve){
+			String message = "";
+			for(ConstraintViolationException<?> constrain:cve.getConstraintViolations()){
+				message+=constrain.getMessage()+"\n";
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+			return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		}
+		return null;
+	}
+	
+}

@@ -1,0 +1,8 @@
+package br.senai.sp.todolist.model;
+
+public class Tarefa {
+	private Long id;
+	private String titulo;
+	private List<ItemTarefa> itens;
+	
+}

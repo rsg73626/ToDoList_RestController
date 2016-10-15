@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Oct 15 17:58:35 BRT 2016
+org.eclipse.jst.jee.server\:ToDoList=C\:\\Users\\Office\\Desktop\\apache-tomcat-8.0.26-windows-i64\\apache-tomcat-8.0.26\\wtpwebapps\\ToDoList
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Office\\Desktop\\Germano_Backend_Workspace\\ToDoList\\WebContent\\WEB-INF\\lib\\spring-web-4.3.2.RELEASE.jar=C\:\\Users\\Office\\Desktop\\apache-tomcat-8.0.26-windows-i64\\apache-tomcat-8.0.26\\wtpwebapps\\ToDoList\\WEB-INF\\lib\\spring-web-4.3.2.RELEASE.jar

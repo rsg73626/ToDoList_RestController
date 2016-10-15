@@ -1,0 +1,11 @@
+package br.senai.sp.todolist.model;
+
+import java.io.Serializable;
+
+public class Item implements Serializable{
+	private Long id;
+	private String descricao;
+	private boolean feito;
+	Tarefa tarefa;
+
+}
