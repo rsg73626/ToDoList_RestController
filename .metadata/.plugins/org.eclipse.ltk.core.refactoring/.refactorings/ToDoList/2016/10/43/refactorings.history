@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ToDoList/WebContent/WEB-INF/spring-context.xml&apos; to &apos;spring-context-antigo.xml&apos;" description="Rename resource &apos;spring-context.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/spring-context.xml" name="spring-context-antigo.xml" stamp="1477154339836" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;ToDoList/src/WEB-INF&apos; to &apos;META-INF&apos;" description="Rename resource &apos;WEB-INF&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/WEB-INF" name="META-INF" stamp="1477156182034" updateReferences="true"/>
+</session>
